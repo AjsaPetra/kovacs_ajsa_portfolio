@@ -1,0 +1,237 @@
+/*Általános*/
+body {
+	margin: 0px;
+	background-color: #fbf5d0;
+	font-family: 'Sacramento', cursive;
+	font-size: 30px;}
+
+a {
+	color: black;
+	text-decoration: none;}
+
+
+/*Fejléc*/
+#fejlec {
+	background-color: #f9eeaa;
+	border: dashed black 4px;
+	padding: 20px 0px 0px 0px;
+	margin: 0px 0px 100px 0px;}
+
+.fokep {
+	position: relative;
+	text-align: center;
+	color: white;}
+
+#boritokep {
+	max-width: 90%;
+	display: block;
+	margin: 0px auto;}
+
+#boritoszoveg {
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-family: 'Pacifico', cursive;
+	font-size: 5vw;
+	position: absolute;
+	top: 50%;
+	left: 28%;
+	transform: translate(-50%, -50%);}
+
+#menu {
+	max-width: 90%;
+	margin: 0px auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;}
+
+.menuelem {
+	font-family: 'Pacifico', cursive;
+	font-size: 20px;
+	text-align: center;
+	width: 160px;
+	padding: 10px;
+	margin: 15px;
+	background-color: #95dada;
+	border-radius: 20px;}
+
+.menuelem:hover {
+	background-color: #5ec9c9;}
+
+
+/*index*/
+.bemutatkozas {
+	text-align: justify;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;}
+
+.bemutatkozas2 {
+	background-color: #c8f4f4;
+	border-radius: 25px;
+	border: solid 1px black;
+	padding: 25px;
+	max-width: 40%;
+	min-width: min-content;
+	margin: 0px 30px;}
+
+#befoglalo {
+	width: 40%;
+	min-width: 300px;
+	margin: auto 30px;}
+
+.bemutatkozas-kep {
+	border: solid 10px #f9eeaa;
+	max-width: 100%;
+	box-sizing: border-box;
+	padding: auto;}
+
+.elerhetoseg {
+	background-color: #f9eeaa;
+	padding: 10px;
+	margin: 30px 0px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;}
+
+
+/*honlap2*/
+#bevezeto {
+	text-align: center;
+	margin: 20px 10px;}
+
+.cim {margin: 10px;}
+
+.munkak_kepek {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;}
+
+.munkak_kepek img {
+	transition: 0.5s;
+	border: solid 10px #f9eeaa;
+	max-height: 20vw;}
+
+.kartya {
+	display: inline-block;
+	padding: 25px;}
+
+.munkak_kepek p {
+	text-align: justify;
+	margin: 0px;
+	width: 0;
+	min-width: 100%;}
+
+.kartya img:hover {
+	box-shadow: 5px 5px 5px #ccc38e;}
+
+
+/*honlap3*/
+.szabadido {
+	padding: 30px;
+	display: grid;
+	grid-gap: 40px 0px;
+	grid-template-columns: minmax(300px, auto);
+	grid-template-areas:
+	"k1"
+	"sz1"
+	"k2"
+	"sz2"
+	"k3"
+	"sz3"
+	"k4"
+	"sz4"
+	"k5"
+	"sz5"
+	"k6"
+	"sz6"
+	"k7"
+	"sz7";}
+
+@media only screen and (min-width: 660px) {
+	.szabadido {
+		padding: 30px;
+		display: grid;
+		grid-gap: 40px 0px;
+		grid-template-columns: minmax(300px, auto) minmax(300px, auto);
+		grid-template-areas:
+		"k1 sz1"
+		"sz2 k2"
+		"k3 sz3"
+		"sz4 k4"
+		"k5 sz5"
+		"sz6 k6"
+		"k7 sz7";}
+}
+
+#kep1 {grid-area: k1;}
+#kep2 {grid-area: k2;}
+#kep3 {grid-area: k3;}
+#kep4 {grid-area: k4;}
+#kep5 {grid-area: k5;}
+#kep6 {grid-area: k6;}
+#kep7 {grid-area: k7;}
+#szoveg1 {grid-area: sz1;}
+#szoveg2 {grid-area: sz2;}
+#szoveg3 {grid-area: sz3;}
+#szoveg4 {grid-area: sz4;}
+#szoveg5 {grid-area: sz5;}
+#szoveg6 {grid-area: sz6;}
+#szoveg7 {grid-area: sz7;}
+
+.kep {
+	border: solid 10px #f9eeaa;
+	transition: 1s;
+	max-width: 100%;
+	max-height: 800px;
+	box-sizing: border-box;
+	margin: auto;
+	opacity: 1;}
+
+#szoveg1, #szoveg2, #szoveg3, #szoveg4, #szoveg5, #szoveg6, #szoveg7 {
+	text-align: justify;
+	min-width: min-content;
+	border: solid 1px black;
+	background-color: #c8f4f4;
+	border-radius: 25px;
+	padding: 25px;
+	margin: auto 30px auto 30px;}
+
+.kepesfelirat {
+	position: relative;
+	margin: auto;}
+
+.befoglalas{
+	min-width: 300px;
+	max-width: 80%;
+	height: auto;
+	max-height: 70%;
+	margin: auto;}
+
+.kepfelirat {
+	transition: 1s;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: justify;}
+
+.befoglalas:hover .kep {opacity: 0.3;}
+.befoglalas:hover .kepfelirat {opacity: 1;}
+
+
+/*honlap4*/
+.honlaptervszoveg {
+	text-align: justify;
+	margin: 30px;}
+
+.honlaptervszoveg a {color: #625e46;}
+
+.honlapterv img {
+	max-height: 600px;
+	margin: 20px;}
+
+.honlapterv {
+	margin: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;}
